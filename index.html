@@ -1,151 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>This Is For You</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love ❤️</title>
+
 <style>
-:root{--bg:#0b0b0c;--text:#ffffff;--muted:#9a9a9a}
-*{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;background:radial-gradient(circle at top,#141416,#050506);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center}
-.screen{width:100%;max-width:900px;padding:40px}
-.center{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh}
-h1{font-weight:400;letter-spacing:.8px}
-p{color:var(--muted)}
-.tap{position:fixed;bottom:30px;width:100%;font-size:12px;letter-spacing:2px;color:#777}
-.hidden{display:none}
-.fade{animation:fade 1.2s ease forwards}
-@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffe6f0, #fff0f5);
+    text-align: center;
+    color: #333;
+}
 
-.polaroid{background:#fff;padding:18px 18px 40px;border-radius:12px;max-width:520px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
-.polaroid img{width:100%;border-radius:6px}
-.caption{color:#000;font-size:14px;margin-top:14px;letter-spacing:.3px}
+h1 {
+    margin-top: 40px;
+    font-size: 40px;
+}
 
-#arena{position:relative;width:100%;max-width:420px;height:420px;margin:40px auto;border-radius:24px;background:#0f0f11;overflow:hidden}
-.heart{position:absolute;font-size:36px;cursor:pointer;user-select:none}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
 
-.grid{display:grid;grid-template-columns:repeat(5,60px);gap:10px;margin-top:30px}
-.box{width:60px;height:60px;border-radius:12px;border:1px solid #444;display:flex;align-items:center;justify-content:center;font-size:22px}
-.correct{background:#fff;color:#000}
+.polaroid {
+    background: white;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
 
-input{width:260px;padding:14px;border-radius:14px;border:none;margin-top:20px;font-size:16px;text-align:center}
+.polaroid:hover {
+    transform: scale(1.05);
+}
 
-iframe{width:100%;max-width:700px;height:480px;border-radius:22px;margin-top:30px;border:none}
+.polaroid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-section {
+    margin: 40px 0;
+}
+
+iframe {
+    width: 90%;
+    max-width: 600px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
 </style>
 </head>
+
 <body>
 
-<div class="screen center fade" id="p1" onclick="start()">
-<h1>This is for you</h1>
-<div class="tap">TAP</div>
-<audio id="music" src="music.mp3"></audio>
+<h1>Happy Birthday My Love ❤️</h1>
+
+<!-- PHOTO GALLERY -->
+<div class="gallery">
+
+<div class="polaroid">
+<img src="pic1.jpg" alt="Memory 1">
 </div>
 
-<div class="screen center hidden fade" id="p2" onclick="go(3)">
-<h1>For everything we are</h1>
+<div class="polaroid">
+<img src="pic2.jpg" alt="Memory 2">
 </div>
 
-<div class="screen center hidden fade" id="p3">
-<div class="polaroid" onclick="nextPhoto()">
-<img id="photo" src="pic1.jpg" />
-<div class="caption" id="cap">Baby you.</div>
-</div>
-<p class="tap">TAP</p>
+<div class="polaroid">
+<img src="pic3.jpg" alt="Memory 3">
 </div>
 
-<div class="screen center hidden fade" id="p4">
-<h1>Catch the hearts</h1>
-<p>40 hearts. 30 seconds.</p>
-<div id="arena"></div>
-<p id="score">0/40</p>
+<div class="polaroid">
+<img src="pic4.jpg" alt="Memory 4">
 </div>
 
-<div class="screen center hidden fade" id="p5">
-<h1>How well do you know me?</h1>
-<p id="q"></p>
-<input id="a" placeholder="Type your answer" />
-<p id="msg"></p>
 </div>
 
-<!-- VIDEO 1 -->
-<div class="screen center hidden fade" id="p6" onclick="go(7)">
-<h1>From me & our little one</h1>
-<iframe src="https://drive.google.com/file/d/1vSOLWiP_UfDgBWWeJHCHU5Tvy1QFdZui/preview" allow="autoplay"></iframe>
-<p class="tap">TAP</p>
+<!-- VIDEOS -->
+<div class="video-section">
+<h2>Special Video 1 💖</h2>
+<iframe 
+src="https://drive.google.com/file/d/1vSOLWiP_UfDgBWWeJHCHU5Tvy1QFdZui/preview"
+allow="autoplay"
+allowfullscreen>
+</iframe>
 </div>
 
-<div class="screen center hidden fade" id="p7">
-<h1>Family round</h1>
-<p id="fq"></p>
-<input id="fa" placeholder="Your answer" />
-<p id="fmsg"></p>
+<div class="video-section">
+<h2>Special Video 2 💕</h2>
+<iframe 
+src="https://drive.google.com/file/d/1mGLx6J7CLk3gh1Kuyz7q7U6qO4BHEwsv/preview"
+allow="autoplay"
+allowfullscreen>
+</iframe>
 </div>
 
-<!-- VIDEO 2 -->
-<div class="screen center hidden fade" id="p8" onclick="go(9)">
-<h1>FAMILA 🤍</h1>
-<iframe src="https://drive.google.com/file/d/1mGLx6J7CLk3gh1Kuyz7q7U6qO4BHEwsv/preview" allow="autoplay"></iframe>
-<p class="tap">TAP</p>
+<div class="video-section">
+<h2>Special Video 3 💘</h2>
+<iframe 
+src="https://drive.google.com/file/d/1YKiwEQxQvt4iLJGL-P5V54ToojEc2Eqx/preview"
+allow="autoplay"
+allowfullscreen>
+</iframe>
 </div>
-
-<div class="screen center hidden fade" id="p9">
-<h1>One last game</h1>
-<p>Center of our universe version2.0.</p>
-<div class="grid" id="grid"></div>
-<input id="word" maxlength="5" placeholder="5-letter word" />
-<p id="wmsg"></p>
-</div>
-
-<!-- VIDEO 3 -->
-<div class="screen center hidden fade" id="p10" onclick="go(11)">
-<h1>Not so perfect surprise</h1>
-<iframe src="https://drive.google.com/file/d/1YKiwEQxQvt4iLJGL-P5V54ToojEc2Eqx/preview" allow="autoplay"></iframe>
-<p class="tap">TAP</p>
-</div>
-
-<div class="screen center hidden fade" id="p11">
-<h1>Happy Birthday</h1>
-<p>We love you</p>
-</div>
-
-<script>
-const music = document.getElementById('music');
-let fadeInterval;
-
-function fadeInMusic(){
-  clearInterval(fadeInterval);
-  let v = music.volume || 0;
-  fadeInterval = setInterval(()=>{
-    v += 0.05;
-    if(v >= 1){ v = 1; clearInterval(fadeInterval); }
-    music.volume = v;
-  },120);
-}
-
-function fadeOutMusic(){
-  clearInterval(fadeInterval);
-  let v = music.volume || 1;
-  fadeInterval = setInterval(()=>{
-    v -= 0.05;
-    if(v <= 0){ v = 0; clearInterval(fadeInterval); }
-    music.volume = v;
-  },120);
-}
-
-function go(n){
-  document.querySelectorAll('.screen').forEach(p=>p.classList.add('hidden'));
-  document.getElementById('p'+n).classList.remove('hidden')
-}
-
-function start(){
-  music.volume = 0;
-  music.play();
-  fadeInMusic();
-  go(2);
-}
-
-/* rest of your game + quiz code remains unchanged */
-</script>
 
 </body>
 </html>
