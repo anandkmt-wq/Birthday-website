@@ -92,7 +92,7 @@ video{width:100%;max-width:700px;border-radius:22px;margin-top:30px}
 
 <!-- PAGE 8 REJECTS VIDEO -->
 <div class="screen center hidden fade" id="p8" onclick="go(9)">
-<h1>FAMILA 🤍</h1>
+<h1>Family 🤍</h1>
 <video controls><source src="video2.mp4" type="video/mp4" /></video>
 <p class="tap">TAP</p>
 </div>
@@ -100,7 +100,7 @@ video{width:100%;max-width:700px;border-radius:22px;margin-top:30px}
 <!-- PAGE 9 WORDLE GAME -->
 <div class="screen center hidden fade" id="p9">
 <h1>One last game</h1>
-<p>Center of our universe version2.0.</p>
+<p>Our entire universie version 2.0 (OG name)</p>
 <div class="grid" id="grid"></div>
 <input id="word" maxlength="5" placeholder="5-letter word" />
 <p id="wmsg"></p>
@@ -108,7 +108,7 @@ video{width:100%;max-width:700px;border-radius:22px;margin-top:30px}
 
 <!-- PAGE 10 FINAL VIDEO -->
 <div class="screen center hidden fade" id="p10" onclick="go(11)">
-<h1>Not so perfect surprise</h1>
+<h1>One last thing</h1>
 <video controls><source src="video3.mp4" type="video/mp4" /></video>
 <p class="tap">TAP</p>
 </div>
@@ -151,12 +151,12 @@ function start(){
 
 // PHOTOS
 const photos=[
-{src:'pic1.jpg',cap:'Stealing hearts,right from the start.'},
-{src:'pic2.jpg',cap:'That smile.'},
-{src:'pic3.jpg',cap:'Swag boy'},
-{src:'pic4.jpg',cap:'His first home.'},
-{src:'pic5.jpg',cap:'His people.'},
-{src:'pic6.jpg',cap:'Our worlds met.'}
+{src:'pic1.jpg',cap:'Stealing hearts, right from the start.'},
+{src:'pic2.jpg',cap:'Stunner.'},
+{src:'pic3.jpg',cap:'That smile.'},
+{src:'pic4.jpg',cap:'Famila.'},
+{src:'pic5.jpg',cap:'His People.'},
+{src:'pic6.jpg',cap:'When our worlds met.'}
 ];let pi=0;
 function nextPhoto(){pi++;if(pi<photos.length){photo.src=photos[pi].src;cap.innerText=photos[pi].cap}else go(4)}
 
@@ -171,9 +171,9 @@ if(spawnInt)return;score=0;time=30;scoreEl.innerText='0/40';spawnInt=setInterval
 
 // QUESTIONS
 const qs=[
-['What did I want to name our son?','shaurya'],
+['What did I want to name our son?','agastya'],
 ['If we won a million dollars, what would I buy first?','house'],
-['My guilty pleasure show?','stranger things'],
+['My is my current fav show?','stranger things'],
 ['Your favourite outfit of mine?','nothing']
 ];let qi=0;
 q.innerText=qs[0][0];
@@ -182,7 +182,7 @@ function check(){if(a.value.toLowerCase().trim()===qs[qi][1]){qi++;a.value='';ms
 
 // FAMILY QUESTIONS
 const fqs=[
-['What is your favourite thing about Gayi aunty?','cooking'],
+['Who is the favourite skill of Gayi aunty?','cooking'],
 ['What does your mother love?','gold'],
 ['What does your father love?','travel'],
 ['What does Harisha do?','nothing']
